@@ -1,43 +1,39 @@
 ### How to use this spring-boot project
 
-- Install packages with `mvn package`
+- Install packages with `mvn clean package`
 - Run `mvn spring-boot:run` for starting the application (or use your IDE)
 
 Application (with the embedded H2 database) is ready to be used ! You can access the url below for testing it :
 
-- Swagger UI : http://localhost:8080/swagger-ui.html
+- Swagger UI : http://localhost:8090/swagger-ui.html
 - H2 UI : http://localhost:8080/h2-console
 
 > Don't forget to set the `JDBC URL` value as `jdbc:h2:mem:testdb` for H2 UI.
 
+### General Informations
 
-
-### Instructions
-
-- download the zip file of this project
-- create a repository in your own github named 'java-challenge'
-- clone your repository in a folder on your machine
-- extract the zip file in this folder
-- commit and push
-
-- Enhance the code in any ways you can see, you are free! Some possibilities:
-  - Add tests
-  - Change syntax
-  - Protect controller end points
-  - Add caching logic for database calls
-  - Improve doc and comments
-  - Fix any bug you might find
-- Edit readme.md and add any comments. It can be about what you did, what you would have done if you had more time, etc.
-- Send us the link of your repository.
+- Application is developed using Intellij Community version IDE
 
 #### Restrictions
 - use java 8
+
+#### what I would have done if I had more time
+- Securing endpoints using better authentication and authorization techniques like JWT based
+- Add more test cases using Junit5 and ensure application has more than 95% code coverage
+- Adding endpoints for end user to add bulk employees, delete bulk employees and also PATCH endpoints if needed to replace PUT
+- Replacing H2 database with MySQL database or other RDBMS database
+- Containerization of application and run backend databases using docker
+- Add spring profile for various environments
+- Add logback xml config based on various environments
+- Monitoring applications using Prometheus JMX exporter and Grafana
+- Create CI/CD pipeline to deploy applications in cloud environment
+- if Java 8 restrictions is not there change the implementation in reactive way
 
 
 #### What we will look for
 - Readability of your code
 - Documentation
-- Comments in your code 
+- Comments in your code
 - Appropriate usage of spring boot
 - Appropriate usage of packages
 - Is the application running as expected
@@ -47,6 +43,13 @@ Application (with the embedded H2 database) is ready to be used ! You can access
 
 Please let us know more about your Java experience in a few sentences. For example:
 
-- I have 3 years experience in Java and I started to use Spring Boot from last year
-- I'm a beginner and just recently learned Spring Boot
-- I know Spring Boot very well and have been using it for many years
+- I have 8 years experience in Java and Spring boot ecosystem
+- Good knowledge on Spring reactive programming but have good understanding about reactive programming
+- Good at troubleshooting and fixing bugs
+- I can handle legacy applications and its migration and have experience in handling Struts based application
+- One year experience in kotlin and Quarkus frameworks
+- Good knowledge on containarization technologies like Docker, kubernetes
+
+
+- Passionate programmer, thirst to learn and build big things
+
